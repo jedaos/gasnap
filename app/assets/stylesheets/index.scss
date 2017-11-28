@@ -62,7 +62,7 @@ header{
 
 .menu li a{
 	text-decoration: none;
-	color: white;
+	color: yellow;
 	padding: 5px 10px;
 	font-family: sans-serif;
 	letter-spacing: 2px;
@@ -84,4 +84,8 @@ header{
 .msg h1{
 	font-size: 52px;
 	margin: 25;
+}
+
+li.login a{
+	color: yellow;
 }
