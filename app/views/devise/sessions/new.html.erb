@@ -1,22 +1,43 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <link rel="stylesheet" href="login.scss">
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  </head>
+<header>
+  <video autoplay loop class="video-background" muted plays-inline>
+    <source src="https://zippy.gfycat.com/SeriousKeenHousefly.webm" type="video/webm"></video>
+    <div class="nav"></div>
+</header>
+  </script>
+  <div class="fields">
 
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field1">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+
+    <div class="field2">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+  <body>
+
+  </body>
+</html>
+
+<div class="check">
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <div class="field3">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
+</div>
 
   <div class="actions">
     <%= f.submit "Log in" %>
