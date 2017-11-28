@@ -14,9 +14,9 @@ Rails.application.routes.draw do
     get "/product" => "product#product"
   end
 
-  devise_scope :user do
-    get "/sign_in" => "sign_in#sign_in"
-  end
+  # devise_scope :user do
+  #   get "/sign_in" => "sign_in#sign_in"
+  # end
 
   devise_scope :user do
     get "/sign_up" => "sign_up#sign_up"
