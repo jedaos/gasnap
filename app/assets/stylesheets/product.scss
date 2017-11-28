@@ -1,0 +1,206 @@
+// Place all the styles related to the Product controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #0f222b;
+  height: 100%;
+  background-image: url("http://assets3.bigthink.com/system/idea_thumbnails/49469/size_896/gasoline.jpg?1361566667");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  background-color: green;
+  background: rgba(46, 186, 138, 0.4);
+
+}
+
+a {
+  color: #95ac5f;
+  text-decoration: none;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+
+.cd-main-header {
+  height: 170px;
+  line-height: 170px;
+  text-align: center;
+}
+.cd-main-header h1 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-main-header {
+    height: 220px;
+    line-height: 220px;
+  }
+  .cd-main-header h1 {
+    font-size: 2.6rem;
+  }
+}
+
+.cd-pricing {
+  width: 90%;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cd-pricing > li {
+  position: relative;
+  margin: 0 auto 2.5em;
+  background-color: #ffffff;
+  border-radius: .3em .3em .25em .25em;
+  box-shadow: 0 2px 8px rgba(2, 4, 5, 0.5);
+}
+.cd-pricing > li.empty-box {
+  box-shadow: none;
+}
+.cd-pricing > li.empty-box::after {
+  /* placeholder visible when .cd-form is open - in this case same color of the background */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f222b;
+}
+@media only screen and (min-width: 768px) {
+  .cd-pricing {
+    max-width: 1000px;
+  }
+  .cd-pricing > li {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
+  .cd-pricing > li:last-of-type {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-pricing > li {
+    width: 28.0%;
+    float: left;
+    margin-right: 8%;
+  }
+}
+
+.cd-pricing-header {
+  padding: 1.3em 1em;
+  background-color: #95ac5f;
+  border-radius: .25em .25em 0 0;
+  box-shadow: inset 0 1px 0 #c1cfa2;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-pricing-header h2, .cd-pricing-header .cd-price {
+  line-height: 1.2;
+}
+.cd-pricing-header h2 {
+  font-size: 10rem;
+  margin-bottom: 0.15em;
+}
+.cd-pricing-header .cd-price {
+  display: inline-block;
+  font-weight: bold;
+}
+.cd-pricing-header .cd-price::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-pricing-header span {
+  float: left;
+}
+.cd-pricing-header span:nth-of-type(2) {
+  color: #c1cfa2;
+}
+.cd-pricing-header span:nth-of-type(2)::before {
+  content: '/';
+}
+@media only screen and (min-width: 768px) {
+  .cd-pricing-header h2 {
+    font-size: 2.6rem;
+  }
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display:block;
+    padding-top: 1.0em;
+    padding-bottom: 2.7em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 7px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover{
+ background-color: #006400;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #006400;
+}
+
+.cd-pricing-footer {
+  padding-bottom: 4.7em;
+  padding-top: .7em;
+}

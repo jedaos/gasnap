@@ -1,0 +1,37 @@
+<body>
+
+<div class="sign_up_form">
+
+<div class="img">
+  <%= image_tag("tranbkg_pic.png__360.png", :alt => "rss feed") %>
+
+</div>
+
+  <h1>Gas in a Snap!</h1>
+
+
+<div>
+  <%= form_for(:user, :url => session_path(:user)) do |f| %>
+</div>
+
+<div>
+  <%= f.text_field :email %>
+</div>
+
+<div>
+  <%= f.password_field :password %>
+</div>
+
+<div>
+  <%= f.check_box :remember_me %>
+</div>
+
+<button class="form_sign_up_button">
+  <%= link_to "Sign Up", sign_in_path %>
+</button>
+
+<% end %>
+
+</div>
+
+</body>

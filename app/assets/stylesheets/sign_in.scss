@@ -1,0 +1,28 @@
+// Place all the styles related to the SignUp controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  background-image: url("05_Gas Station   550.jpg");
+}
+
+h1{
+  color: yellow;
+}
+.sign_up_form{
+  text-align: center;
+  font-size: 1em;
+  padding: 11em, 0, 0, 2em;
+}
+
+button, .sign_in_in_sign_in{
+background:rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+font-size: 2em;
+color: yellow;
+
+}
+
+.img{
+  image-resolution: from-image;
+}
