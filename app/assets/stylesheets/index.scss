@@ -1,0 +1,87 @@
+// Place all the styles related to the login controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.video-background{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: fit-content;
+	height: fit-content;
+	background-color: #e0ebeb;
+	z-index: -100;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.video-background {
+		width: 100%;
+		height: fit-content;
+	}
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.video-background {
+		width: fit-content;
+		height: 100%;
+	}
+}
+header{
+	background: rgba(0,0,255,0.5);
+	height: 100px
+}
+
+.nav{
+	background: rgba(0,255,0,0.5);
+	height: 100px;
+}
+.logo{
+	margin: 5px 50px;
+	height: 60px;
+}
+.menu{
+	text-align: center;
+	display: block;
+	position: relative;
+	bottom: 80px;
+	margin: 20px;
+	font-size: 40px;
+}
+
+.menu li{
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+.menu li a:hover{
+	background: #006400;
+	transition: .4s;
+}
+
+.msg{
+	position: relative;
+	text-align: center;
+	font-family: sans-serif;
+	color: 	black;
+	top: 200px;
+}
+
+.msg h1{
+	font-size: 52px;
+	margin: 25;
+}
