@@ -16,7 +16,10 @@
 </nav>
 
 <br><br><br>
-<span>Total: $5.00</span>
+<ul class="new">
+  <li>Gas cost: $61.80</li>
+  <li>Gasnap fee: $2.50</li>
+</ul>
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
@@ -30,7 +33,7 @@
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="A month's subscription"
-          data-amount="500"
+          data-amount="6430"
           data-locale="auto"></script>
 <% end %>
   <br><br><br>

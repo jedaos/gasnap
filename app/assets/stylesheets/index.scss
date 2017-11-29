@@ -8,6 +8,11 @@
 	padding: 0;
 }
 
+h1.snap-snap{
+background-color: #116120;
+
+}
+
 .video-background{
 	position: absolute;
 	right: 0;
@@ -90,16 +95,33 @@ li.login a{
 }
 
 button.form_sign_up_button{
-	color: white;
+	color: yellow;
+	text-decoration: none;
 }
 .sign_up_form{
 	text-align: center;
 }
 
-#membersihp{
-	color: white;
-}
 
 .today-button{
 text-decoration: none;
+}
+
+
+span.email{
+	color: yellow;
+	padding-right: 1.2em;
+}
+
+span.password{
+	color: yellow;
+}
+
+span.a{
+	text-decoration: none;
+	color:red;
+}
+
+span.remember_me{
+	font-size: 1.8em;
 }

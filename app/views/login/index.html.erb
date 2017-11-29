@@ -10,6 +10,7 @@
 
         <video autoplay loop class="video-background" muted plays-inline>
           <source src="https://zippy.gfycat.com/SeriousKeenHousefly.webm" type="video/webm"></video>
+          </header>
 
             <div class="logo">
               <%= image_tag("tranbkg_pic.png__360.png", :alt => "rss feed") %>
@@ -18,38 +19,38 @@
        <div class="sign_up_form">
 
 
-         <h1>Gas in a Snap!</h1>
+         <h1 class="snap-snap">Snap Snap Here Comes The Gas!</h1>
 
 
        <div>
          <%= form_for(:user, :url => session_path(:user)) do |f| %>
        </div>
-
+         <br>
        <div>
-         <span>Email</span><%= f.text_field :email %>
+         <span class="email">Email</span><%= f.text_field :email %>
+       </div>
+        <br>
+       <div>
+         <span class="password">Password</span><%= f.password_field :password %>
+       </div>
+        <br>
+       <div>
+         <%= f.check_box :remember_me %> <span class="remember_me">Remember Me</span>
        </div>
 
-       <div>
-         <span>Password</span><%= f.password_field :password %>
-       </div>
-
-       <div>
-         <%= f.check_box :remember_me %> <span>Remember Me</span>
-       </div>
 
        <div class="form_sign_up_button">
-         <%= link_to "Login", product_path, {:style=>'color:#FFFFFF; font-family:serif; font-size:1.5em'} %>
+         <span>
+           <%= link_to "Login  /", product_path, {:style=>'color:#ffffff; font-family: serif; font-size: 1.5em;'} %>
+           <%= link_to "Register", sign_up_path, {:style=>'color:#ffffff; font-family: serif; font-size: 1.5em;'} %>
+         </span>
+
        </div>
 
-      <p id="membersihp">Not a Member Yet?</p>
-      <%= link_to "Sign Up Today!", sign_up_path,
-      {:style=>'color:#F7FB12; font-size:2em; font-family:san; background-color:white opacity: 0.5; '} %>
-      <!-- <span class="today-button">Up Today!</span> -->
        <% end %>
 
        </div>
 
-      </header>
     <body>
 
   </body>
