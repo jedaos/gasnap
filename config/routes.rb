@@ -22,4 +22,11 @@ Rails.application.routes.draw do
     get "/sign_up" => "sign_up#sign_up"
   end
 
+  devise_scope :user do
+    get "/payment" => "charges#new"
+  end
+
+   devise_scope :user do
+    resources :charges
+    end
 end

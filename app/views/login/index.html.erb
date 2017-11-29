@@ -11,13 +11,12 @@
         <video autoplay loop class="video-background" muted plays-inline>
           <source src="https://zippy.gfycat.com/SeriousKeenHousefly.webm" type="video/webm"></video>
 
+            <div class="logo">
+              <%= image_tag("tranbkg_pic.png__360.png", :alt => "rss feed") %>
+            </div>
 
        <div class="sign_up_form">
 
-       <div class="img">
-         <%= image_tag("tranbkg_pic.png__360.png", :alt => "rss feed") %>
-
-       </div>
 
          <h1>Gas in a Snap!</h1>
 
@@ -39,12 +38,13 @@
        </div>
 
        <div class="form_sign_up_button">
-         <%= link_to "Login", product_path %>
+         <%= link_to "Login", product_path, {:style=>'color:#FFFFFF; font-family:serif; font-size:1.5em'} %>
        </div>
 
-      <p>Not a Member Yet?</p>
-      <%= link_to "Sign", sign_up_path %>
-      <span>Up Today!</span>
+      <p id="membersihp">Not a Member Yet?</p>
+      <%= link_to "Sign Up Today!", sign_up_path,
+      {:style=>'color:#F7FB12; font-size:2em; font-family:san; background-color:white opacity: 0.5; '} %>
+      <!-- <span class="today-button">Up Today!</span> -->
        <% end %>
 
        </div>

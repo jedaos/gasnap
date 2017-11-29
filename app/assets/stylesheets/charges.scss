@@ -1,3 +1,48 @@
 // Place all the styles related to the charges controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.picture {
+  float: left;
+
+}
+body.payment {
+  background: url("checkout.jpeg");
+  margin-top: 0em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height:100%;
+  text-align: center;
+  font-size: 500%;
+}
+
+span {
+  color: white;
+  font-family: serif;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+
+h1 {
+  color: orange;
+}
+
+.data-lead-body {
+  color: #ff6e00;
+}
+
+#text{
+  color: orange;
+  font-size: 17px;
+}
+
+.site-header{
+  padding-top: 100px !important;
+}
+
+body{
+  margin: 0px;
+}

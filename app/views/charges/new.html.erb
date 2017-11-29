@@ -1,4 +1,22 @@
+
 <%= form_tag charges_path do %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Payment Information</title>
+
+  </head>
+
+  <body class="payment">
+<nav>
+  <div class='picture'>
+    <%= image_tag("tranbkg_pic.png__360.png", :alt => "rss feed") %>
+  </div>
+</nav>
+
+<br><br><br>
+<span>Total: $5.00</span>
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
@@ -6,7 +24,6 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $5.00</span>
     </label>
   </article>
 
@@ -16,3 +33,5 @@
           data-amount="500"
           data-locale="auto"></script>
 <% end %>
+  <br><br><br>
+</body>

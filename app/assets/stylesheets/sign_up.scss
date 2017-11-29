@@ -4,6 +4,7 @@
 
 h1{
   text-align: center;
+  color: yellow;
 }
 .form{
   text-align: center;
@@ -11,10 +12,15 @@ h1{
 
 
 .sign_in_in_sign_in{
-  font-size: 2em;
+  font-size: 3em;
 }
 
-button, .sign_in_in_sign_in{
-  font-size: 2em;
-  radius: 50%;
+
+.email_password{
+color: white;
+}
+
+.sign_up_form{
+  padding-top: 7em;
+  padding-bottom: 10em;
 }

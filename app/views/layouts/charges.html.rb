@@ -1,6 +1,12 @@
-Rails.configuration.stripe = {
-  :publishable_key => ENV['PUBLISHABLE_KEY'],
-  :secret_key      => ENV['SECRET_KEY']
-}
-
-Stripe.api_key = Rails.configuration.stripe[:secret_key]
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      Thank you
+    </div>
+  </body>
+</html>
