@@ -1,0 +1,20 @@
+h1 {
+  color: orange;
+}
+
+.data-lead-body {
+  color: #ff6e00;
+}
+
+#text{
+  color: orange;
+  font-size: 17px;
+}
+
+.site-header{
+  padding-top: 100px !important;
+}
+
+body{
+  margin: 0px;
+}
