@@ -26,7 +26,12 @@ Rails.application.routes.draw do
     get "/payment" => "charges#new"
   end
 
-   devise_scope :user do
-    get "/confirmation" => "charges#index"
-    end
+  devise_scope :user do
+    resources :charges
+  end
+
+  devise_scope :user do
+   get '/map' => 'maps#map'
+  end
+
 end
